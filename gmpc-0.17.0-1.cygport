@@ -1,0 +1,11 @@
+inherit gnome2
+
+DESCRIPTION="GTK+ client for the Music Player Daemon"
+HOMEPAGE="http://gmpc.wikia.com/wiki/"
+SRC_URI="mirror://sourceforge/musicpd/${P}.tar.gz"
+PATCH_URI="0.17-implib.patch"
+
+PKG_NAMES="${PN} ${PN}-devel"
+PKG_HINTS="setup devel"
+gmpc_CONTENTS="etc/ usr/bin/ usr/share/"
+gmpc_devel_CONTENTS="usr/include/ usr/lib/"
