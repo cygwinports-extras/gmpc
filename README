@@ -6,22 +6,20 @@ provides. It gives the user several ways to browse his database while
 still being a lightweight client.
 
 Runtime requirements:
-  cygwin-1.7.0-51
-  libcairo2-1.8.6-10
-  libcurl4-7.19.4-1
-  libgcc1-4.3.2-2
-  libgdk_pixbuf2.0_0-2.16.3-1
+  cygwin-1.7.1-1
+  libcairo2-1.8.8-1
+  libgcc1-4.3.4-3
+  libgdk_pixbuf2.0_0-2.18.6-1
   libglade2.0_0-2.6.4-1
-  libglib2.0_0-2.20.4-1
-  libgtk2.0_0-2.16.3-1
-  libICE6-1.0.5-10
+  libglib2.0_0-2.22.4-2
+  libgtk2.0_0-2.18.6-1
   libintl8-0.17-11
-  libmpd1-0.18.0-1
-  libpango1.0_0-1.24.3-1
-  libSM6-1.1.0-10
-  libsoup2.4_1-2.26.3-1
-  libX11_6-1.2.1-1
-  libxml2-2.7.3-10
+  libmpd1-0.19.0-1
+  libpango1.0_0-1.26.2-1
+  libsoup2.4_1-2.28.2-1
+  libsqlite3_0-3.6.21-3
+  libX11_6-1.3.2-2
+  libxml2-2.7.6-1
   zlib0-1.2.3-10
 
 Build requirements:
@@ -48,208 +46,23 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gmpc-0.18.0-X-src.tar.bz2
+  unpack gmpc-0.19.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gmpc-0.18.0-X.cygport all
+  cygport ./gmpc-0.19.1-X.cygport all
 
 This will create:
-  /usr/src/gmpc-0.18.0-X-src.tar.bz2
-  /usr/src/gmpc-0.18.0-X.tar.bz2
-  /usr/src/gmpc-devel-0.18.0-X.tar.bz2
+  /usr/src/gmpc-0.19.1-X-src.tar.bz2
+  /usr/src/gmpc-0.19.1-X.tar.bz2
+  /usr/src/gmpc-devel-0.19.1-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary packages:
-
-(gmpc)
-  /etc/postinstall/gmpc.sh
-  /usr/bin/gmpc-remote-stream
-  /usr/bin/gmpc-remote.exe
-  /usr/bin/gmpc.exe
-  /usr/share/applications/gmpc.desktop
-  /usr/share/doc/gmpc/AUTHORS
-  /usr/share/doc/gmpc/COPYING
-  /usr/share/doc/gmpc/ChangeLog
-  /usr/share/doc/gmpc/NEWS
-  /usr/share/doc/gmpc/README
-  /usr/share/doc/gmpc/TODO
-  /usr/share/gmpc/aboutdialog.ui
-  /usr/share/gmpc/gmpc-gtk-win32.rc
-  /usr/share/gmpc/icons/gmpc-loading-cover.png
-  /usr/share/gmpc/icons/gmpc-no-cover.png
-  /usr/share/gmpc/icons/hicolor/128x128/categories/mpd.png
-  /usr/share/gmpc/icons/hicolor/128x128/status/fetching-artist.png
-  /usr/share/gmpc/icons/hicolor/128x128/status/frame-artist.png
-  /usr/share/gmpc/icons/hicolor/128x128/status/no-artist.png
-  /usr/share/gmpc/icons/hicolor/128x128/status/stylized-cover.png
-  /usr/share/gmpc/icons/hicolor/128x128/status/stylized-fetching-cover.png
-  /usr/share/gmpc/icons/hicolor/128x128/status/stylized-no-cover.png
-  /usr/share/gmpc/icons/hicolor/16x16/actions/media-playlist.png
-  /usr/share/gmpc/icons/hicolor/16x16/actions/media-tag.png
-  /usr/share/gmpc/icons/hicolor/16x16/actions/playlist-browser.png
-  /usr/share/gmpc/icons/hicolor/16x16/actions/playlist-search-browser.png
-  /usr/share/gmpc/icons/hicolor/16x16/actions/tag-browser.png
-  /usr/share/gmpc/icons/hicolor/16x16/apps/gmpc.png
-  /usr/share/gmpc/icons/hicolor/16x16/status/audio-volume-high.png
-  /usr/share/gmpc/icons/hicolor/16x16/status/audio-volume-low.png
-  /usr/share/gmpc/icons/hicolor/16x16/status/audio-volume-medium.png
-  /usr/share/gmpc/icons/hicolor/16x16/status/audio-volume-muted.png
-  /usr/share/gmpc/icons/hicolor/16x16/status/emblem-favorite.png
-  /usr/share/gmpc/icons/hicolor/16x16/status/gmpc-tray-disconnected.png
-  /usr/share/gmpc/icons/hicolor/16x16/status/gmpc-tray-pause.png
-  /usr/share/gmpc/icons/hicolor/16x16/status/gmpc-tray-play.png
-  /usr/share/gmpc/icons/hicolor/16x16/status/gmpc-tray.png
-  /usr/share/gmpc/icons/hicolor/22x22/actions/media-playlist.png
-  /usr/share/gmpc/icons/hicolor/22x22/apps/gmpc.png
-  /usr/share/gmpc/icons/hicolor/22x22/status/audio-volume-high.png
-  /usr/share/gmpc/icons/hicolor/22x22/status/audio-volume-low.png
-  /usr/share/gmpc/icons/hicolor/22x22/status/audio-volume-medium.png
-  /usr/share/gmpc/icons/hicolor/22x22/status/audio-volume-muted.png
-  /usr/share/gmpc/icons/hicolor/22x22/status/emblem-favorite.png
-  /usr/share/gmpc/icons/hicolor/22x22/status/gmpc-tray-disconnected.png
-  /usr/share/gmpc/icons/hicolor/22x22/status/gmpc-tray-pause.png
-  /usr/share/gmpc/icons/hicolor/22x22/status/gmpc-tray-play.png
-  /usr/share/gmpc/icons/hicolor/22x22/status/gmpc-tray.png
-  /usr/share/gmpc/icons/hicolor/32x32/actions/add-url.png
-  /usr/share/gmpc/icons/hicolor/32x32/actions/media-playlist.png
-  /usr/share/gmpc/icons/hicolor/32x32/actions/media-tag.png
-  /usr/share/gmpc/icons/hicolor/32x32/actions/playlist-browser.png
-  /usr/share/gmpc/icons/hicolor/32x32/actions/playlist-search-browser.png
-  /usr/share/gmpc/icons/hicolor/32x32/actions/tag-browser.png
-  /usr/share/gmpc/icons/hicolor/32x32/apps/gmpc.png
-  /usr/share/gmpc/icons/hicolor/32x32/status/audio-volume-high.png
-  /usr/share/gmpc/icons/hicolor/32x32/status/audio-volume-low.png
-  /usr/share/gmpc/icons/hicolor/32x32/status/audio-volume-medium.png
-  /usr/share/gmpc/icons/hicolor/32x32/status/audio-volume-muted.png
-  /usr/share/gmpc/icons/hicolor/32x32/status/emblem-favorite.png
-  /usr/share/gmpc/icons/hicolor/32x32/status/gmpc-tray.png
-  /usr/share/gmpc/icons/hicolor/48x48/actions/media-playlist.png
-  /usr/share/gmpc/icons/hicolor/48x48/actions/media-tag.png
-  /usr/share/gmpc/icons/hicolor/48x48/actions/tag-browser.png
-  /usr/share/gmpc/icons/hicolor/48x48/apps/gmpc.png
-  /usr/share/gmpc/icons/hicolor/48x48/status/fetching-artist.png
-  /usr/share/gmpc/icons/hicolor/48x48/status/frame-artist.png
-  /usr/share/gmpc/icons/hicolor/48x48/status/gmpc-tray.png
-  /usr/share/gmpc/icons/hicolor/48x48/status/no-artist.png
-  /usr/share/gmpc/icons/hicolor/48x48/status/stylized-cover.png
-  /usr/share/gmpc/icons/hicolor/64x64/status/fetching-artist.png
-  /usr/share/gmpc/icons/hicolor/64x64/status/frame-artist.png
-  /usr/share/gmpc/icons/hicolor/64x64/status/no-artist.png
-  /usr/share/gmpc/icons/hicolor/64x64/status/stylized-cover.png
-  /usr/share/gmpc/icons/hicolor/64x64/status/stylized-fetching-cover.png
-  /usr/share/gmpc/icons/hicolor/64x64/status/stylized-no-cover.png
-  /usr/share/gmpc/icons/hicolor/72x72/status/fetching-artist.png
-  /usr/share/gmpc/icons/hicolor/72x72/status/frame-artist.png
-  /usr/share/gmpc/icons/hicolor/72x72/status/no-artist.png
-  /usr/share/gmpc/icons/hicolor/72x72/status/stylized-cover.png
-  /usr/share/gmpc/icons/hicolor/72x72/status/stylized-fetching-cover.png
-  /usr/share/gmpc/icons/hicolor/72x72/status/stylized-no-cover.png
-  /usr/share/gmpc/icons/hicolor/96x96/status/fetching-artist.png
-  /usr/share/gmpc/icons/hicolor/96x96/status/frame-artist.png
-  /usr/share/gmpc/icons/hicolor/96x96/status/no-artist.png
-  /usr/share/gmpc/icons/hicolor/96x96/status/stylized-fetching-cover.png
-  /usr/share/gmpc/icons/hicolor/96x96/status/stylized-no-cover.png
-  /usr/share/gmpc/icons/hicolor/scalable/apps/gmpc.svg
-  /usr/share/gmpc/icons/hicolor/scalable/categories/mpd.svg
-  /usr/share/gmpc/icons/hicolor/scalable/status/audio-volume-high.svg
-  /usr/share/gmpc/icons/hicolor/scalable/status/audio-volume-low.svg
-  /usr/share/gmpc/icons/hicolor/scalable/status/audio-volume-medium.svg
-  /usr/share/gmpc/icons/hicolor/scalable/status/audio-volume-muted.svg
-  /usr/share/gmpc/icons/hicolor/scalable/status/emblem-favorite.svg
-  /usr/share/gmpc/icons/hicolor/scalable/status/fetching-artist.svg
-  /usr/share/gmpc/icons/hicolor/scalable/status/frame-artist.svg
-  /usr/share/gmpc/icons/hicolor/scalable/status/gmpc-tray-disconnected.svg
-  /usr/share/gmpc/icons/hicolor/scalable/status/gmpc-tray-pause.svg
-  /usr/share/gmpc/icons/hicolor/scalable/status/gmpc-tray-play.svg
-  /usr/share/gmpc/icons/hicolor/scalable/status/gmpc-tray.svg
-  /usr/share/gmpc/icons/hicolor/scalable/status/no-artist.svg
-  /usr/share/gmpc/icons/hicolor/scalable/status/stylized-cover.svg
-  /usr/share/gmpc/icons/hicolor/scalable/status/stylized-fetching-cover.svg
-  /usr/share/gmpc/icons/hicolor/scalable/status/stylized-no-cover.svg
-  /usr/share/gmpc/icons/media-album.png
-  /usr/share/gmpc/icons/media-artist.png
-  /usr/share/gmpc/icons/media-audiofile.png
-  /usr/share/gmpc/icons/media-stream.png
-  /usr/share/gmpc/icons/mpdBrowser_case.png
-  /usr/share/gmpc/password-dialog.ui
-  /usr/share/gmpc/playlist-message-window.ui
-  /usr/share/gmpc/playlist-save-dialog.ui
-  /usr/share/gmpc/playlist3.glade
-  /usr/share/gmpc/preferences-connection.ui
-  /usr/share/gmpc/preferences-esf-dialog.ui
-  /usr/share/gmpc/preferences-mmkeys.ui
-  /usr/share/gmpc/preferences-playlist.ui
-  /usr/share/gmpc/preferences-plugins.ui
-  /usr/share/gmpc/preferences-proxy.ui
-  /usr/share/gmpc/preferences-server.ui
-  /usr/share/gmpc/preferences-trayicon.ui
-  /usr/share/gmpc/preferences.ui
-  /usr/share/gmpc/weblinks.list
-  /usr/share/icons/hicolor/16x16/apps/gmpc.png
-  /usr/share/icons/hicolor/22x22/apps/gmpc.png
-  /usr/share/icons/hicolor/32x32/apps/gmpc.png
-  /usr/share/icons/hicolor/48x48/apps/gmpc.png
-  /usr/share/icons/hicolor/scalable/apps/gmpc.svg
-  /usr/share/locale/bg/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/bn/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/bs/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/cs/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/de/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/es/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/fi/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/fr/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/gl/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/he/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/hi/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/hu/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/id/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/it/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/jv/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/lv/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/ms/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/nb/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/ne/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/nl/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/pl/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/pt/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/pt_BR/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/ro/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/ru/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/sq/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/sv/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/tr/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/zh_CN/LC_MESSAGES/gmpc.mo
-  /usr/share/locale/zh_TW/LC_MESSAGES/gmpc.mo
-  /usr/share/man/man1/gmpc-remote.1.gz
-  /usr/share/man/man1/gmpc.1.gz
-
-(gmpc-devel)
-  /usr/include/gmpc/TreeSearchWidget.h
-  /usr/include/gmpc/config1.h
-  /usr/include/gmpc/gmpc-clicklabel.h
-  /usr/include/gmpc/gmpc-connection.h
-  /usr/include/gmpc/gmpc-easy-command.h
-  /usr/include/gmpc/gmpc-meta-watcher.h
-  /usr/include/gmpc/gmpc-metaimage.h
-  /usr/include/gmpc/gmpc-mpddata-model-sort.h
-  /usr/include/gmpc/gmpc-mpddata-model.h
-  /usr/include/gmpc/gmpc-mpddata-treeview.h
-  /usr/include/gmpc/gmpc-profiles.h
-  /usr/include/gmpc/gmpc-signals.h
-  /usr/include/gmpc/gmpc-version.h
-  /usr/include/gmpc/gmpc_easy_download.h
-  /usr/include/gmpc/metadata.h
-  /usr/include/gmpc/misc.h
-  /usr/include/gmpc/playlist3-messages.h
-  /usr/include/gmpc/plugin.h
-  /usr/lib/libgmpc.a
-  /usr/lib/pkgconfig/gmpc.pc
-
-------------------
-
 Port Notes:
+
+----- version 0.19.1-1 -----
+Version bump.
 
 ----- version 0.18.0-1 -----
 Initial release for Cygwin.
