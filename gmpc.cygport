@@ -1,0 +1,18 @@
+inherit gnome2
+
+NAME="gmpc"
+VERSION=11.8.16
+RELEASE=1
+CATEGORY="Audio"
+SUMMARY="GTK+ client for the Music Player Daemon"
+DESCRIPTION="GMPC is a GTK2 client for Music Player Daemon. The interface is
+made to be easy to use, but provide full access to all the features MPD
+provides. It gives the user several ways to browse his database while still
+being a lightweight client."
+HOMEPAGE="http://gmpclient.org/"
+SRC_URI="http://www.musicpd.org/download/gmpc/${VERSION}/gmpc-${VERSION}.tar.gz"
+PATCH_URI="11.8.16-implib.patch"
+
+PKG_NAMES="gmpc gmpc-devel"
+gmpc_CONTENTS="etc/ usr/bin/ usr/share/"
+gmpc_devel_CONTENTS="usr/include/ usr/lib/"
